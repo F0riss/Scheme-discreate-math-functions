@@ -1,4 +1,4 @@
-# subset
+# scheme program 
 ;this is a sheme program the has the following functions subset, union, intersection, difference 
 
 (define (member x set)
@@ -37,7 +37,7 @@
 (difference '(a b c) '(a c))
 
 (define (union list1 list2)
-  (cond ((null? list1) list2);checks if l1 is null if then print l2
+  (cond ((null? list1) list2);checks if l1 is null if so then print l2
         ((member (car list1) list2) (union (cdr list1) list2))
 
         (else (cons (car list1) (union (cdr list1) list2)))))
